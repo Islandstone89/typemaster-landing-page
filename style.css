@@ -339,6 +339,10 @@ body {
     padding-inline-start: 2.5rem;
     padding-inline-end: 0;
   }
+
+  @media (width > 60rem) {
+    padding-inline-start: 0;
+  }
 }
 
 .intro__image {
