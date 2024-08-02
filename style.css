@@ -154,6 +154,11 @@ body {
   line-height: var(--lh-300);
 }
 
+:is(.header, .main, .footer) {
+  max-width: 100rem;
+  margin-inline: auto;
+}
+
 :is(.top-feature, .features) {
   text-align: center;
 
@@ -219,6 +224,7 @@ body {
 .link {
     display: inline-block;
     text-transform: uppercase;
+    text-wrap: nowrap;
     font-weight: var(--fw-700);
     padding: 1em 1.5em;
     border-radius: 8px;
@@ -408,6 +414,11 @@ body {
 
   @media (width > 45rem) {
     gap: 2rem;
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 2.5rem;
+  }
+
+  @media (width > 60rem) {
     padding-inline-start: 0;
     padding-inline-end: 0;
   }
