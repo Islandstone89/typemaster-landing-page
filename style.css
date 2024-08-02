@@ -170,6 +170,7 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .5);
 }
 
 .edge-right {
@@ -403,11 +404,22 @@ body {
 
 
 
-/* .overlay {
+.overlay {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.overlay::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   background-color: var(--clr-orange-200);
-  mix-blend-mode: multiply;
-  opacity: .5;
-} */
+  opacity: .75;
+}
 
 
 /* FOOTER */
